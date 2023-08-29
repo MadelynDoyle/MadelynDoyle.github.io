@@ -1,13 +1,22 @@
 /* Structure */
+
 body {
     background-color:darkseagreen;
 
 }
+
 /* Tables */
-tb{
+
+table {
+    border-collapse: collapse;
+}
+td,
+th {
     border: 1px solid slategray;
 }
+
 /* Typogrphy */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
