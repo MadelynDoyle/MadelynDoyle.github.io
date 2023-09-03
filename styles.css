@@ -1,12 +1,41 @@
 /*colors*/
 body{
-    background-color:lightskyblue;
-    color:lemonchiffon;
+    color:mediumseagreen;
+    background-color:lemonchiffon;
 }
 h1{
-    color:darkkhaki;
+    color:purple;
+}
+h2{
+    color:plum;
 }
 /*fonts and content*/
 body{
     font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+    background-color: mintcream;
+    width: 75%;
+    margin:auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+/*nav*/
+#nav-assignment1 a {
+    text-decoration: none;
+    background-color: antiquewhite;
+    color:black;
+    padding: 2px;
+}
+#nav-assignment1 a:hover{
+    background:pink;
+}
+#nav-assignment2 a {
+    text-decoration: none;
+    background-color: bisque;
+    color:black;
+    padding: 2px;
+}
+#nav-assignment2 a:hover{
+    background:lightsalmon;
 }
