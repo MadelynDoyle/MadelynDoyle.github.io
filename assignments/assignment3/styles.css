@@ -57,6 +57,9 @@ formatted-area {
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    text-align: center;
+}
 /*Larger Resolutions*/
 @media only screen and (min-width: 600px) {
     #main-nav li {
