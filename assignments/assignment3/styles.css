@@ -7,6 +7,7 @@ body{
 }
 #main-header {
     background-color: pink;
+    border:3px solid darkcyan;
 }
 #main-content {
     background-color: lightsalmon;
@@ -17,6 +18,25 @@ body{
 formatted-area {
     padding: 5px;
     margin: auto;
+}
+#main-div {
+    width: 75%;
+    margin:auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+.section-one {
+    background-color: lightpink;
+    border:3px solid darkcyan;
+}
+.section-one header {
+    color:darkcyan;
+}
+.columns {
+    display:flex;
+}
+.col1of2{
+    flex:1;
 }
 /*Main Navigation*/
 #main-nav ul{
@@ -36,4 +56,10 @@ formatted-area {
 /*Typography*/
 body{
     font-family: Arial, Helvetica, sans-serif;
+}
+/*Larger Resolutions*/
+@media only screen and (min-width: 600px) {
+    #main-nav li {
+        display:inline-block;
+    }
 }
