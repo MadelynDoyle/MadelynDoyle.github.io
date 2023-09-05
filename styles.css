@@ -39,3 +39,12 @@ body{
 #nav-assignment2 a:hover{
     background:lightsalmon;
 }
+#nav-assignment3 a{
+    text-decoration: none;
+    background-color: antiquewhite;
+    color:black;
+    padding: 2px;
+}
+#nav-assignment3 a:hover{
+    background:pink;
+}
