@@ -2,8 +2,15 @@
 body{
     background-color: lemonchiffon;
 }
+p {
+    color:black;
+}
+ul {
+    color:black;
+}
 #main-h1 {
     color:darkcyan;
+    text-align: center;
 }
 #main-header {
     background-color: pink;
@@ -36,19 +43,26 @@ formatted-area {
     display:flex;
 }
 .col1of2{
+    flex:3;
+}
+.col2of2{
     flex:1;
 }
 /*Main Navigation*/
+nav {
+    text-align: center;
+}
 #main-nav ul{
     padding-left: 0px;
 }
 #main-nav li {
     list-style-type: none;
-    display: inline-block;
+    display:inline-block;
 }
 #main-nav a{
     text-decoration: none;
     color: black;
+    background-color: peachpuff;
 }
 #main-nav a:hover{
     border-bottom: 3px solid darkcyan;
@@ -57,12 +71,10 @@ formatted-area {
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
-    text-align: center;
-}
+
 /*Larger Resolutions*/
-@media only screen and (min-width: 600px) {
-    #main-nav li {
+@media only screen and (min-width: 768px) {
+    #main-nav ul {
         display:inline-block;
     }
 }
