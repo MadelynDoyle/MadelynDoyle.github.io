@@ -6,38 +6,62 @@
 </head>
 <body>
     <div id="main-div">
-    <header id="main-header" class="formatted-area">
-        <h1 id="main-h1">Assignment 3: Page Layout</h1>
-        <nav id="main-nav" class="horizontal-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="main-content" class="formatted-area">
-        <div class="columns">
-        <section class="section-one col1of2">
-            <header class="section-headers">
-                <h1>Main Content</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget egestas purus viverra accumsan in nisl. Purus semper eget duis at tellus. Varius duis at consectetur lorem donec massa. Lorem ipsum dolor sit amet consectetur adipiscing. Etiam tempor orci eu lobortis elementum nibh. Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Arcu felis bibendum ut tristique et egestas quis ipsum. Ultrices eros in cursus turpis massa tincidunt.</p>
-            </header>
-        </section>
-        <section class="section-one col2of2">
-            <header class="section-headers">
-                <h1>Side Bar</h1>
+        <header id="main-header" class="formatted-area">
+            <h1 id="main-h1">Assignment 3: Page Layout</h1>
+            <nav id="main-nav" class="horizontal-nav">
                 <ul>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
-            </header>
-        </section>
-    </div>
+            </nav>
+        </header>
+        <main id="main-content" class="formatted-area">
+            <div class="content-sidebar">
+                <section class="main-content">
+                        <h1>Main Content</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget egestas purus viverra accumsan in nisl. Purus semper eget duis at tellus. Varius duis at consectetur lorem donec massa. Lorem ipsum dolor sit amet consectetur adipiscing. Etiam tempor orci eu lobortis elementum nibh. Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Arcu felis bibendum ut tristique et egestas quis ipsum. Ultrices eros in cursus turpis massa tincidunt.</p>
+                    </header>
+                </section>
+                <section class="spacer"></section>
+                <section class="main-sidebar">
+                        <h1>Side Bar</h1>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+                </section>
+        </div>
+        <div class="outer-columns">
+            <div class="inner-columns">
+                <h2>Column 1</h2>
+                <div class="nested-colum">Colum 1</div>
+                <div class="nested-colum">Colum 2</div>
+                <div class="nested-colum">Colum 3</div>
+            </div>
+            <div class="inner-columns">
+                <h2>Column 2</h2>
+                <div class="nested-colum">Colum 1</div>
+                <div class="nested-colum">Colum 2</div>
+                <div class="nested-colum">Colum 3</div>
+            </div>
+        </div>
+        <div class="image">
+            <div class="act-img"><img id="320x100" src="https://place-hold.it/320x100"></div>
+            <div class="act-img"><img id="320x100" src="https://place-hold.it/320x100"></div>
+            <div class="act-img"><img id="320x100" src="https://place-hold.it/320x100"></div>
+        </div>
     </main>
-    <footer id="main-footer" class="formatted-area">
-        <p>Goodbye!</p>
+    <footer>
+        <div class="footer-full">
+            <div id="footer-note">
+                <p>Goodbye!</p>
+            </div>
+            <div id="foot-address">
+                <p>123 Anywhere St. Columbia,SC</p>
+            </div>
+        </div>
     </footer>
     </div>
 </body>
