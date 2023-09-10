@@ -1,0 +1,90 @@
+/*Header*/
+.main-header{
+
+}
+.header-div{
+
+}
+.header-section{
+
+}
+.main-nav{
+    display:flex;
+}
+.ul-box{
+    flex-direction: row;
+    text-decoration: none;
+}
+/*Main Content*/
+.main-content{
+    display:flex;
+}
+.content-div{
+    display:flex;
+}
+.content-section{
+    flex:1;
+}
+#RatSC{
+
+}
+#RraUSC{
+
+}
+#BfOB{
+
+}
+#ANU{
+
+}
+#outer-columns{
+
+}
+.inner-columns{
+
+}
+.nested-column{
+
+}
+#researchSpotlight-footer{
+
+}
+#Breakfac{
+
+}
+#IinR{
+
+}
+#TheLeading{
+
+}
+.BetterWorld-div{
+    display:flex;
+}
+#inner-BetterWorld{
+
+}
+#OofVP{
+
+}
+
+/*Footer*/
+.main-footer{
+
+}
+.outer-footer{
+    display:flex;
+}
+.inner{
+
+}
+.nested-foot{
+
+}
+.footer-ul{
+
+}
+/*Typography*/
+body{
+
+}
