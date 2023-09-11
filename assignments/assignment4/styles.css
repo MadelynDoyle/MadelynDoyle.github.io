@@ -8,63 +8,8 @@
 .header-section{
 
 }
-.main-nav{
-    display:flex;
-}
-.ul-box{
-    flex-direction: row;
-    text-decoration: none;
-}
 /*Main Content*/
-.main-content{
-    display:flex;
-}
-.content-div{
-    display:flex;
-}
-.content-section{
-    flex:1;
-}
-#RatSC{
-
-}
-#RraUSC{
-
-}
-#BfOB{
-
-}
-#ANU{
-
-}
-#outer-columns{
-
-}
-.inner-columns{
-
-}
-.nested-column{
-
-}
-#researchSpotlight-footer{
-
-}
-#Breakfac{
-
-}
-#IinR{
-
-}
-#TheLeading{
-
-}
-.BetterWorld-div{
-    display:flex;
-}
-#inner-BetterWorld{
-
-}
-#OofVP{
+.main-nav {
 
 }
 
@@ -72,9 +17,7 @@
 .main-footer{
 
 }
-.outer-footer{
-    display:flex;
-}
+
 .inner{
 
 }
@@ -86,5 +29,27 @@
 }
 /*Typography*/
 body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+ .columns {
+    display:flex;
+ }   
+
+ .flex-one {
+    flex:1;
+ }
+
+ .ul-box{
+    text-decoration: none;
+    flex-direction: row;
+}
+.main-nav li{
+    list-style-type: none;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 75px;
+}
 
 }

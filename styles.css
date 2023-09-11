@@ -44,7 +44,7 @@ img {
     width: 300px;
     height:150px;
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .assignment-div {
         display: flex;
         flex-direction: column;
