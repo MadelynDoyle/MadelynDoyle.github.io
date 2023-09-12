@@ -27,10 +27,67 @@
 .footer-ul{
 
 }
+/*Colors*/
+#section-h2{
+    background-color: rgb(115,0,10);
+    color:white;
+}
+#RatSC{
+    padding: 10px;
+    background-color: white;
+    color:black;
+}
+#RraUSC{
+    background-color: rgb(115,0,10);
+    color:black;
+}
+#BfOB{
+    background-color: black;
+    color:white;
+}
+#ANU{
+    background-color: white;
+    color:rgb(115,0,10);
+}
+#research-spotlight{
+    background-color: white;
+    color: rgb(115,0,10);
+}
+.inner-columns{
+    background-color: white;
+}
+.research-headers{
+    color:rgb(115,0,10);
+}
+#Breakfac{
+    color:white;
+    background-color: rgb(87,0,8);
+}
+#IinR{
+    background-color: white;
+    color:rgb(115,0,10);
+}
+#TheLeading{
+    color:white;
+    background-color: rgb(30,65,77);
+}
+#inner-BetterWorld{
+    color:white;
+    background-color: rgb(115,0,10);
+}
+#office-vpheader{
+    color:rgb(115,0,10);
+}
+.main-footer{
+    color:white;
+    background-color: rgb(115,0,10);
+}
+
 /*Typography*/
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 @media screen and (min-width: 768px) {
  .columns {
@@ -51,5 +108,13 @@ body{
     padding-left: 50px;
     padding-right: 75px;
 }
-
+.formatted{
+    padding:10px;
+    margin: auto;
+}
+.formatted-header{
+    padding: 10px;
+    margin:auto;
+    text-align: center;
+}
 }
