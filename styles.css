@@ -18,24 +18,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #content{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
     padding: 10px;
     margin: auto;
 }
 .assignment-div {
-    display:flex;
     padding: 10px;
     margin: auto;
-    flex-direction: column;
-}
-.outer-section {
-    display: flex;
-    justify-content: space-between;
 }
 .assignment-section {
-    flex: 1;
     background-color: white;
     text-align: center;
     padding: 15px;
@@ -49,13 +39,23 @@ img {
     height:150px;
 }
 @media screen and (min-width: 768px) {
+    #content{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .assignment-div {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .assignment-section {
         flex: 1;
         flex-wrap: wrap;
         margin: 10px;
+    }
+    .outer-section{
+        display: flex;
+        justify-content: space-between;
     }
 }
