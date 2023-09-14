@@ -23,6 +23,11 @@ body{
         display: flex;
     }
     .flex-box-inner{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nested-format{
         flex:1;
     }
 }
