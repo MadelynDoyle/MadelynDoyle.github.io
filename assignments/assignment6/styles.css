@@ -1,0 +1,13 @@
+/*typography*/
+/*.special{
+    background-color:blanchedalmond;
+    padding:5px;
+    color:plum;
+    border: 1px dotted lightblue;
+}*/
+/*Media Section*/
+@media screen and (min-width: 768px) {
+    #header-section, #flex-box-outer, #flex-box-inner{
+        display: flex;
+    }
+}
