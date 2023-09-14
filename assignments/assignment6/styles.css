@@ -1,17 +1,28 @@
 /*typography*/
-/*.special{
-    background-color:blanchedalmond;
-    padding:5px;
-    color:plum;
-    border: 1px dotted lightblue;
-}*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Header and Footer*/
+#header-section{
+    justify-content: center;
+    background-color: cornsilk;
+}
+#footer-section{
+    text-align: center;
+    background-color: cornsilk;
+}
+/*Main Content*/
+.nested-format{
+    background-color:cadetblue;
+    border: 5px solid lightblue;
+    justify-content: center;
+}
 /*Media Section*/
 @media screen and (min-width: 768px) {
-    #header-section, #flex-box-outer{
+    #header-section, #flex-box-outer, .nested-format{
         display: flex;
     }
-    #flex-box-inner{
-        flex: 1;
-        flex-direction: column;
+    .flex-box-inner{
+        flex:1;
     }
 }
