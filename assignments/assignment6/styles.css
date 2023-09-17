@@ -18,6 +18,13 @@ body{
     justify-content: center;
 }
 /*Animation*/
+/*Show Hide Img*/
+#image-to-toggle {
+    display: none; /* Initially hide the image */
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
 
 
 /*Media Section*/
