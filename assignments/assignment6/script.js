@@ -9,3 +9,10 @@ showButton.addEventListener('click', () => {
 hideButton.addEventListener('click', () => {
     imageToToggle.style.display = 'none'; // Hide the image
 });
+
+const animateButton = document.getElementById('animate-button');
+const heartAnimation = document.getElementById('heart-animation');
+
+animateButton.addEventListener('click', () => {
+    heartAnimation.classList.add('animating'); // Add the "animating" class to start the animation
+});
