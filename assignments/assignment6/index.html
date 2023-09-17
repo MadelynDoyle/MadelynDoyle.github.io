@@ -35,9 +35,24 @@
                 <section id="Input" class="nested-format">
                     <section class="box-content">
                         <h2>Input</h2>
+                        <form id="comment-form">
+                            <label for="product-name">Product Name:</label>
+                            <input type="text" id="product-name" required><br>
+
+                            <label for="comment-text">Comment:</label>
+                            <textarea id="comment-text" required></textarea><br>
+
+                            <label for="rating">Rating:</label>
+                            <input type="number" id="rating" min="1" max="5" required><br>
+
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required><br>
+
+                            <button type="button" id="add-comment-button">Add Comment</button>
+                        </form>
+                        <div id="comment-list"></div>
                     </section>
                 </section>
-
             </section>
         </section>
 

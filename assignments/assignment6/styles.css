@@ -17,6 +17,13 @@ body{
     border: 5px solid lightblue;
     justify-content: center;
 }
+/*Show Hide Img*/
+#image-to-toggle {
+    display: none; /* Initially hide the image */
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
 /*Animation*/
 @keyframes heartBeat {
     0% {
@@ -39,14 +46,22 @@ body{
 #heart-animation.animating {
     animation: heartBeat 1s infinite; /* Apply the heartBeat animation when animating class is added */
 }
-/*Show Hide Img*/
-#image-to-toggle {
-    display: none; /* Initially hide the image */
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
+/* Input Section */
+#comment-form {
+    margin-bottom: 20px;
 }
 
+/* Comment List */
+.comment-box {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.comment-content {
+    font-size: 14px;
+}
 
 /*Media Section*/
 @media screen and (min-width: 768px) {
