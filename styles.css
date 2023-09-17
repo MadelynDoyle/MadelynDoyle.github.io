@@ -39,22 +39,25 @@ img {
     height:150px;
 }
 @media screen and (min-width: 768px) {
-    #content{
-        display:flex;
+    #content {
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
+
     .assignment-div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
+
     .assignment-section {
-        flex: 1;
-        flex-wrap: wrap;
+        flex-basis: calc(33.33% - 20px);
         margin: 10px;
     }
-    .outer-section{
+
+    .outer-section {
         display: flex;
         justify-content: space-between;
     }
