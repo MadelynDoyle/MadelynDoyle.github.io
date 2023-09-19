@@ -4,6 +4,9 @@
 /*Header*/
 .mainheader{
     background-color: lightcoral;
+    text-align:center;
+    padding: 10px;
+    margin: auto;
 }
 
 /*Exercise 1/Exercise 2*/
