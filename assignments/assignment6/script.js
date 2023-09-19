@@ -4,11 +4,11 @@ const hideButton = document.getElementById('hide-button');
 const imageToToggle = document.getElementById('image-to-toggle');
 
 showButton.addEventListener('click', () => {
-    imageToToggle.style.display = 'block'; // Show the image
+    imageToToggle.style.display = 'block';
 });
 
 hideButton.addEventListener('click', () => {
-    imageToToggle.style.display = 'none'; // Hide the image
+    imageToToggle.style.display = 'none';
 });
 //animation section
 const animateButton = document.getElementById('animate-button');
