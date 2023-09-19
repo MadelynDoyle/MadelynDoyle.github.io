@@ -8,7 +8,20 @@
     padding: 10px;
     margin: auto;
 }
-
+.main-nav{
+    text-decoration: none;
+}
+.main-li{
+    text-decoration: none;
+    padding:10px;
+    margin: auto;
+}
+.main-a{
+    text-decoration: none;
+}
+.main-a a:hover{
+    border-bottom: 5px coral;
+}
 /*Exercise 1/Exercise 2*/
 
 /*Exercise 1 - youngest or oldest*/
@@ -21,6 +34,13 @@
 @media screen and (min-width: 768px) {
     .format{
 
+    }
+    .main-nav{
+        display: flex;
+    }
+    .main-li{
+        display: block;
+        flex-direction: row;
     }
     .exercisesection{
 
