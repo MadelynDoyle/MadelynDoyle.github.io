@@ -5,6 +5,7 @@
 .mainheader{
     background-color: lightcoral;
     text-align:center;
+    justify-content: center;
     padding: 10px;
     margin: auto;
 }
@@ -33,11 +34,38 @@
     left: 0;
     transition: height 0.5s;
 }
+.exercise-content {
+    align-items: center;
+    width: 500px; 
+    height: 600px; 
+    margin: 20px; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+#exercise1-content {
+    background-color: coral;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+#exercise2-content {
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 5px;
+}
 
 /*Typography*/
 
 /*Media Query*/
 @media screen and (min-width: 768px) {
+    .mainheader {
+        display: flex;
+        justify-content: center;
+    }
+    .mainheader h1 {
+        text-align: center;
+    }    
     .format{
         display: flex;
     }
@@ -50,36 +78,42 @@
     }
     .exercise-bar button {
         padding: 10px 20px;
-        cursor: pointer;
-        background-color: transparent;
         border: none;
+        font-weight: bold;
+        background-color: transparent;
+        text-align: center;
         color: red;
     }
     .exercise-button {
         padding: 10px 20px;
-        cursor: pointer;
         border: none;
         color: black;
-        font-weight: bold;
         text-decoration: none;
     }
-
-    .exercise-button button:hover {
-        border-bottom: 2px solid red;
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
     }
-    
     .exercise-content {
-        display: none;
-        text-align: center;
-        padding: 20px;
-        background-color: #f0f0f0;
-        border-top: 1px solid #ddd;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        width: 500px;
+        height: 600px;
+        margin: 20px; 
+        border: 1px solid #ddd; 
+        box-sizing: border-box; 
     }
-    
     #exercise1-content {
-        background-color: coral;
+        background-color: lightcoral;
         padding: 20px;
         border-radius: 5px;
+    }
+    #exercise2-content{
+        background-color: lightcoral;
     }
     
     .input-group {

@@ -28,6 +28,18 @@ exercise2Button.addEventListener('click', () => {
     exercise1Content.style.display = 'none';
     exercise2Content.style.display = 'block';
 });
+const exerciseButtons = document.querySelectorAll('.exercise-button');
+const exerciseContents = document.querySelectorAll('.exercise-content');
+
+exerciseButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        exerciseContents.forEach(content => {
+            content.style.display = 'none';
+        });
+
+        exerciseContents[index].style.display = 'block';
+    });
+});
 
 compareButton.addEventListener('click', () => {
     const age1 = parseInt(age1Input.value); 
