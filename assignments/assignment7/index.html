@@ -11,21 +11,51 @@
                 <h1>If Statment Assignment</h1>
             </div>
         </header>
-        <section class="exercisesection">
-            <ul class="main-nav">
-                <li class="main-li"><a href="#" class="main-a">exercise 1</a></li>
-                <li class="main-li"><a href="#" class="main-a">exercise 2</a></li>
-            </ul>
-            <section class="exercise1section format">
-
-            </section>
-            <section class="exercide2section format">
-
-            </section>
-        </section>
-
+        <div class="exercise-bar">
+            <button id="exercise1">Exercise 1</button>
+            <button id="exercise2">Exercise 2</button>
+        </div>
+        <div class="exercise-content">
+            <div id="exercise1-content">
+                <div id="exercise1-content">
+                    <h2>Who's The Oldest</h2>
+                    <div class="exercise1-container">
+                        <div class="input-group">
+                            <label for="name1">Name 1:</label>
+                            <input type="text" id="name1">
+                            <label for="age1">Age 1:</label>
+                            <input type="number" id="age1">
+                        </div>
+                        <div class="input-group">
+                            <label for="name2">Name 2:</label>
+                            <input type="text" id="name2">
+                            <label for="age2">Age 2:</label>
+                            <input type="number" id="age2">
+                        </div>
+                        <div class="input-group">
+                            <label for="name3">Name 3:</label>
+                            <input type="text" id="name3">
+                            <label for="age3">Age 3:</label>
+                            <input type="number" id="age3">
+                        </div>
+                        <button id="compareButton">Compare Ages</button>
+                    </div>
+                    <p id="oldestResult"></p>
+                </div>
+                <p>This is Exercise 1 content.</p>
+            </div>
+            <div id="exercise2-content">
+                <h2>Donation Thermometer</h2>
+                <p>Enter the amount of donations so far:</p>
+                <input type="number" id="donationAmount">
+                <button id="updateThermometer">Update Thermometer</button>
+                <div class="thermometer">
+                    <div id="progress"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
-
     <footer>
 
     </footer>
