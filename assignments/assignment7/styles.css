@@ -56,6 +56,9 @@
 }
 
 /*Typography*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /*Media Query*/
 @media screen and (min-width: 768px) {
