@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-
-    </head>
-    <body>
-        <header>
-
-        </header>
-    </body>
-    <footer>
-
-    </footer>
+<html>
+<head>
+    <title>Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h2>Running Man</h2>
+            <div class="man-container">
+                <img id="running-man" src="images/walking.jpg" alt="Man">
+            </div>
+        </div>
+        <div class="column">
+            <h2>Fund Raising</h2>
+            <p>Goal 10,000.00</p>
+            <div class="thermometer">
+                <div class="thermometer-fill" id="thermometer-fill"></div>
+            </div>
+            <input type="number" id="thermometer-input" placeholder="Enter value">
+            <button id="thermometer-button">Set Value</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
