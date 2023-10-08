@@ -23,11 +23,14 @@ const rainbowContainer = document.getElementById("rainbow");
 const potOfGold = document.getElementById("pot-of-gold");
 
 document.getElementById("rainbow-button").addEventListener("click", () => {
+    // Clear previous rainbow colors
+    rainbowContainer.innerHTML = '';
+
     let delay = 0;
 
     rainbowColors.forEach(color => {
         setTimeout(() => {
-            const paragraph = document.createElement("p");
+            const paragraph = document.createElement("div"); // Changed from 'p' to 'div'
             paragraph.style.backgroundColor = color;
             rainbowContainer.appendChild(paragraph);
         }, delay);
@@ -37,5 +40,5 @@ document.getElementById("rainbow-button").addEventListener("click", () => {
 
     setTimeout(() => {
         potOfGold.style.display = "block";
-    }, delay + 500); 
+    }, delay + 500);
 });

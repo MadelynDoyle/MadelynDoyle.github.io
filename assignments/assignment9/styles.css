@@ -2,6 +2,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: black;
 }
 /*Colors*/
 .colors{
@@ -13,22 +14,27 @@ body{
     margin: auto;
 }
 @media screen and (min-width: 768px) {
-    .outer{
+    .outer {
+        background-color: black;
+        margin: auto;
         display: flex;
+        justify-content: space-between;
     }
     .quote-box{
-        flex:1;
+        flex: 1;
         flex-direction: column;
         margin-top: 20px;
         font-size: 24px;
+        padding: 20px; 
     }
     .rainbow-box{
-        flex:1;
+        flex: 1;
         flex-direction: column;
         margin-top: 20px;
         display: inline-block;
         vertical-align: top;
         position: relative;
+        padding: 20px; 
     }
     #rainbow {
         height: 200px;
@@ -36,6 +42,7 @@ body{
         margin: 0 auto;
         border-radius: 50%;
         position: relative;
+        padding: 20px; 
     }
     .gold{
         display: none;
