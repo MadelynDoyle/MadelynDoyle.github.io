@@ -1,0 +1,51 @@
+/*Typography*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*Colors*/
+.colors{
+    background-color: blue;
+    color: black;
+}
+.outer{
+    background-color: black;
+    margin: auto;
+}
+@media screen and (min-width: 768px) {
+    .outer{
+        display: flex;
+    }
+    .quote-box{
+        flex:1;
+        flex-direction: column;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .rainbow-box{
+        flex:1;
+        flex-direction: column;
+        margin-top: 20px;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+    #rainbow {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        position: relative;
+    }
+    .gold{
+        display: none;
+        width: 40px;
+        height: 40px;
+        background-color: #FFD700;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
