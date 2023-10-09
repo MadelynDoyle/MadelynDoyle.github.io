@@ -23,7 +23,6 @@ const rainbowContainer = document.getElementById("rainbow");
 const potOfGold = document.getElementById("pot-of-gold");
 
 document.getElementById("rainbow-button").addEventListener("click", () => {
-    // Clear previous rainbow colors
     rainbowContainer.innerHTML = '';
 
     let delay = 0;
