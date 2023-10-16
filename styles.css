@@ -31,6 +31,16 @@ body{
     padding: 15px;
     margin: 0 10px;
 }
+.projects-div{
+    padding: 10px;
+    margin: auto;
+}
+.project-section{
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0 10px;
+}
 img {
     display:flex;
     align-items: center;
@@ -69,10 +79,6 @@ img {
     .project-section{
         flex-basis: calc(33.33% - 20px);
         margin: 10px;
-        background-color: white;
-        text-align: center;
-        padding: 15px;
-        margin: 0 10px;
     }
     
 }
