@@ -1,7 +1,8 @@
 class Toy {
-    constructor(name, price, rating, image) {
+    constructor(name, price, agerange, rating, image) {
         this.name = name;
         this.price = price;
+        this.agerange = agerange;
         this.rating = rating;
         this.image = image;
     }
