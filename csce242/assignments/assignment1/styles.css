@@ -1,0 +1,28 @@
+.hobbyTable {
+    border-collapse: collapse;
+}
+
+.hobbyTable th, .hobbyTable td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.links {
+    list-style-type: none;
+    text-align: center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+}
+h1 {
+    text-align: center;
+    color: green;
+}
+h2 {
+    text-align: center;
+    color: grey;
+}
+img {
+    padding: 20px;
+}
