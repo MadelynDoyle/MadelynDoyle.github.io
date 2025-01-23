@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+    background-color: #9FE2BF;
+}
+p{
+    color: #3c5548;
+}
+h1, h2{
+    color: #e29fc2;
+}
+.assignments-format{
+    text-decoration: none;
+    color: #e29fc2;
+}
