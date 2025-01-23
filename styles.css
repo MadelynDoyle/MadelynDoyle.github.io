@@ -1,15 +1,20 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 25px;
-    background-color: #9FE2BF;
+    background-color: #e1dfe6;
+}
+#main-content{
+    margin: 20px;
+    padding: 10px;
 }
 p{
-    color: #3c5548;
+    color: #097ba3;
 }
 h1, h2{
-    color: #e29fc2;
+    color: #4c3363;
 }
 .assignments-format{
     text-decoration: none;
-    color: #e29fc2;
+    color: #097ba3;
 }
+
