@@ -7,122 +7,120 @@
 <body>
     <header id="main-header">
         <h1>Layout with Flex!</h1>
-        <nav id="main-nav">
+        <nav class="main-navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a src="index.html">Home</a></li>
+                <li><a src="#">About</a></li>
+                <li><a src="#">Blog</a></li>
+                <li><a src="#">Store</a></li>
+                <li><a src="#"></a>Staff</li>
+                <li><a src="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="main-content">
+    <main>
         <h2>Big Ideas!</h2>
-        <div class="flex-container-rows">
-            <section class="row1of3">
-                <div class="text-content">
+        <div class="bigIdeas-container">
+            <div class="ideas" id="idea1">
+                <div class="left-content">
                     <h3>Idea 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>some text</p>
                 </div>
-                <div class="image-content">
-                    <img src="images/image1.jpg"">
+                <div class="right-content">
+                    <img src="images/image1.jpg">
                 </div>
-            </section>
-            <section class="row1of3 row-reverse">
-                <div class="image-content">
-                    <img src="images/image1.jpg"">
+            </div>
+
+            <div class="ideas" id="idea2">
+                <div class="left-content">
+                    <img src="images/image1.jpg">
                 </div>
-                <div class="text-content">
+                <div class="right-content">
                     <h3>Idea 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>some text</p>
                 </div>
-            </section>
-            <section class="row1of3">
-                <div class="text-content">
+            </div>
+
+            <div class="ideas" id="idea3">
+                <div class="left-content">
                     <h3>Idea 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>some text</p>
                 </div>
-                <div class="image-content">
-                    <img src="images/image1.jpg"">
+                <div class="right-content">
+                    <img src="images/image1.jpg">
                 </div>
-            </section>
+            </div>
         </div>
 
-        <div class="flex-container">
-            <section class="col1of3">
-                <h3>Topics</h3>
-                <div class="flex-container column-layout">
-                    <div class="inner-section">
+        <div class="bottom-div">
+            <div class="bottom-content" id="bottom1">
+                <div class="bottom-content-1">
+                    <div class="content-1-titles">
                         <h3>Title 1</h3>
                         <img src="images/image2.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-1-titles">
                         <h3>Title 2</h3>
                         <img src="images/image2.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-1-titles">
                         <h3>Title 3</h3>
                         <img src="images/image2.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-1-titles">
                         <h3>Title 4</h3>
                         <img src="images/image2.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
                 </div>
-            </section>
-
-            <section class="col1of3">
-                <h3>Some Links</h3>
+            </div>
+            <div class="bottom-content" id="bottom2">
+                <h3>Links!</h3>
                 <ul>
                     <li><a href="#">Item 1</a></li>
                     <li><a href="#">Item 2</a></li>
                     <li><a href="#">Item 3</a></li>
                     <li><a href="#">Item 4</a></li>
                 </ul>
-            </section>
-
-            <section class="col1of3">
-                <h3>Topics</h3>
-                <div class="flex-container column-layout">
-                    <div class="inner-section">
+            </div>
+            <div class="bottom-content" id="bottom3">
+                <div class="bottom-content-3">
+                    <div class="content-3-titles">
                         <h3>Title 1</h3>
                         <img src="images/image3.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-3-titles">
                         <h3>Title 2</h3>
                         <img src="images/image3.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-3-titles">
                         <h3>Title 3</h3>
                         <img src="images/image3.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-3-titles">
                         <h3>Title 4</h3>
                         <img src="images/image3.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-3-titles">
                         <h3>Title 5</h3>
                         <img src="images/image3.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
-                    <div class="inner-section">
+                    <div class="content-3-titles">
                         <h3>Title 6</h3>
                         <img src="images/image3.jpg">
-                        <p>some text</p>
+                        <p>some content</p>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
 
