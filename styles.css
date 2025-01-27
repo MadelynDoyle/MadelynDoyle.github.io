@@ -10,11 +10,37 @@ body{
 p{
     color: #097ba3;
 }
-h1, h2{
+h1, h2, h3{
     color: #4c3363;
+}
+a{
+    text-decoration: none;
+    color: #4c3363;
+    text-align: center;
 }
 .assignments-format{
     text-decoration: none;
     color: #097ba3;
 }
+.assignments-div{
+    background-color: #097ba3;
+    padding: 10px;
+}
+.assignment-boxes p{
+    text-align: center;
+}
+.assignment-boxes{
+    padding: 10px;
+    margin: 10px;
+    background-color: #e1dfe6;
+}
+#main-footer p{
+    text-align: center;
+}
 
+/*Large Res*/
+@media (min-width: 900px) {
+    .assignments-div{
+        display: flex;
+    }
+}
