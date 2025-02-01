@@ -1,0 +1,305 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: #600000; /* Dark red */
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #600000;
+}
+
+a:hover {
+    color: #990000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+#main-header {
+    background-color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header-content{
+    display: flex;
+}
+.outer-logo{
+    padding: 2px;
+    margin: 2px;
+}
+.outer-search{
+    padding: 2px;
+    margin: 2px;
+}
+
+.top-nav nav{
+    background-color: black;
+    padding: 10px;
+    text-align: left; 
+}
+
+.top-nav-div {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 10px;
+}
+
+.banner-nav li a {
+    font-size: 2px; 
+}
+.banner-nav{
+    font-size: 5px;
+}
+
+/* Gateways For Text */
+.gateways-for {
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Logo */
+.outer-logo img {
+    max-height: 50px;
+}
+
+/* Search Icon */
+.outer-search img {
+    max-height: 50px;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #600000;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gateways-for {
+    font-weight: bold;
+    color: white;
+}
+
+/* Hide "Gateways For" on small screens */
+@media (max-width: 900px) {
+    .gateways-for {
+        display: none;
+    }
+}
+
+/* Navigation Links */
+.banner-nav {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.banner-nav li {
+    display: inline-block;
+}
+
+.banner-nav li a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* MAIN NAV */
+.main-nav {
+    background-color: #990000;
+    padding: 10px;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.main-nav ul li a {
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+
+/* HERO SECTION */
+.large-img {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.large-img img {
+    width: 100%;
+    height: auto;
+}
+
+.img-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    max-width: 400px;
+}
+
+/* CONTENT LAYOUT */
+.row-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* LEFT SIDEBAR */
+.col1 {
+    flex: 1;
+    max-width: 25%;
+    background: white;
+    padding: 20px;
+}
+
+/* Sidebar Navigation */
+.side-nav ul {
+    padding: 0;
+}
+
+.side-nav ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.side-nav ul li a {
+    font-size: 14px;
+}
+
+/* RIGHT CONTENT */
+.col2 {
+    flex: 2;
+    max-width: 70%;
+    background: white;
+    padding: 20px;
+}
+
+/* NEWS SECTION */
+.aside-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.aside-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+#main-footer {
+    background-color: #600000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer Links Layout */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+/* Footer Columns */
+.footer-section {
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Footer Titles */
+.footer-section h2 {
+    color: white;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+/* Footer Links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-section ul li {
+    padding: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive - Larger Screens */
+@media (min-width: 900px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+    }
+}
+@media (max-width: 900px) {
+    .gateways-for {
+        display: none;
+    }
+}
