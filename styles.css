@@ -40,12 +40,15 @@ a{
 
 /*Large Res*/
 @media (min-width: 900px) {
+    .main-content{
+        display: flex;
+    }
     .assignments-div{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .assignment-boxes {
         flex: 1; 
-        max-width: 300px; 
+        max-width: 400px; 
     }
 }
