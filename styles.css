@@ -3,7 +3,7 @@ body{
     margin: 25px;
     background-color: #e1dfe6;
 }
-#main-content{
+.main-content{
     margin: 20px;
     padding: 10px;
 }
@@ -42,5 +42,10 @@ a{
 @media (min-width: 900px) {
     .assignments-div{
         display: flex;
+        justify-content: space-between;
+    }
+    .assignment-boxes {
+        flex: 1; 
+        max-width: 300px; 
     }
 }
