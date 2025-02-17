@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 8 - If Statements</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span class="arrow">▼</span>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" onclick="showExercise(1)">Exercise 1</a></li>
+                    <li><a href="#" onclick="showExercise(2)">Exercise 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="exercise1" class="exercise">
+                <h3>Travelling</h3>
+                <p>Enter your mode of Transportation</p>
+                <input type="text" id="transportInput" oninput="updateTransportImage()">
+                <div id="transportImageContainer"></div>
+            </section>
+            <section id="exercise2" class="exercise hidden">
+                <h3>Color My Heart</h3>
+                <button onclick="changeHeartColor('red')">Red</button>
+                <button onclick="changeHeartColor('green')">Green</button>
+                <button onclick="changeHeartColor('blue')">Blue</button>
+                <div class="heart" id="heart"></div>
+            </section>
+        </main>
+    </body>
+</html>
