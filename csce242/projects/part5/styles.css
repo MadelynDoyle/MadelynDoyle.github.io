@@ -101,20 +101,20 @@ nav {
     color: #0d1d2e;
 }
 .left-contact{
-    padding: 15px;
-    margin: 15px;
+    padding: 5px;
+    margin: 5px;
 }
 .left-contact p{
     background-color: white;
     color: #0d1d2e;
-    padding: 15px;
-    margin: 15px;
+    padding: 5px;
+    margin: 5px;
 }
 .left-order{
     background-color: white;
     color: #0d1d2e;
-    padding: 15px;
-    margin: 15px;
+    padding: 5px;
+    margin: 5px;
 }
 form {
     display: flex;
