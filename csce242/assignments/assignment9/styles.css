@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f2;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #4a636e;
+}
+
+h2 {
+    color: #d44a4a;
+}
+
+/* Dragon Container */
+.dragon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fde8b1;
+    border-radius: 10px;
+}
+
+.dragon {
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.dragon:hover {
+    transform: scale(1.05);
+}
+
+.dragon img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.dragon h3 {
+    color: #a12d2d;
+    margin-top: 10px;
+}
+
+/* Modal Styling */
+.w3-modal-content {
+    background-color: #ff7f3f;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rotation Animation */
+@keyframes rotateImage {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotate {
+    animation: rotateImage 1s ease-in-out;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
