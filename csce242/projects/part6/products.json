@@ -1,0 +1,39 @@
+[
+    {
+        "_id" : "1",
+        "name" : "Brisket",
+        "meatType" : "Beef",
+        "cutDescription" : "From the brest or lower chest of the cow",
+        "averageWeight" : "10 to 16 pounds",
+        "pricePerPound" : "$10.99 per pound",
+        "image" : "images/Brisket.jpg"
+    },
+    {
+        "_id" : "2",
+        "name" : "Ground Beef",
+        "meatType" : "Beef",
+        "cutDescription" : "Beef that is finely chopped or ground",
+        "averageWeight" : "1 pound package, 2 pound package, or 5 pound package",
+        "pricePerPound" : "$8.25 per pound",
+        "image" : "images/GroundBeef.jpg"
+    },
+    {
+        "_id" : "3",
+        "name" : "Porkchops",
+        "meatType" : "Pork",
+        "cutDescription" : "A loin cut near the spine of the pig.",
+        "averageWeight" : "10-12 ounces",
+        "pricePerPound" : "$2.98 per pound",
+        "image" : "images/Porkchops.jpg"
+    },
+    {
+       "_id" : "4",
+        "name" : "Ribeye",
+        "meatType" : "Beef",
+        "cutDescription" : "From the upper ribcage of the cow.",
+        "averageWeight" : "2 to 3 pounds",
+        "pricePerPound" : "$20.99 per pound",
+        "image" : "images/Ribeye.jpg" 
+    }
+
+]
