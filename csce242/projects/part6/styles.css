@@ -125,12 +125,14 @@ form {
 
 /*Products Page*/
 .left-products{
+    flex: 1;
     padding: 15px;
     margin: 15px;
     background-color: #93D2F3;
     color:#0d1d2e;
 }
 .right-products{
+    flex: 1;
     padding: 15px;
     margin: 15px;
     background-color: #93D2F3;
@@ -149,6 +151,7 @@ form {
     margin: 10px;
 }
 .product-images{
+    flex: 1;
     padding: 15px;
     margin: 15px;
     background-color: #93D2F3;

@@ -33,7 +33,25 @@
         "cutDescription" : "From the upper ribcage of the cow.",
         "averageWeight" : "2 to 3 pounds",
         "pricePerPound" : "$20.99 per pound",
-        "image" : "images/Ribeye.jpg" 
+        "image" : "images/Ribeyes.jpg" 
+    },
+    {
+        "_id" : "5",
+        "name" : "Hanger Steak",
+        "meatType" : "Beef",
+        "cutDescription" : "Known as the butcher's steak because there is only one per cow.",
+        "averageWeight" : "2 to 3 pounds",
+        "pricePerPound" : "$16.49 per pound",
+        "image" : "images/HangerSteak.jpeg"
+    },
+    {
+        "_id" : "6",
+        "name" : "Ground Pork",
+        "meatType" : "Pork",
+        "cutDescription" : "Made up of teh trimmings of the hog.",
+        "averageWeight" : "1 to 2 pound packages",
+        "pricePerPound" : "$4.99 per pound",
+        "image" : "images/GroundPork.jpg"
     }
 
 ]
