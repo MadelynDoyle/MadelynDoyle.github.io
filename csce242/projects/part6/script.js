@@ -1,11 +1,13 @@
 function toggleNav() {
     let nav = document.getElementById("nav-menu");
-    if (nav.style.display === "block") {
-        nav.style.display = "none"; 
+
+    if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "block"; 
     } else {
-        nav.style.display = "block";
+        nav.style.display = "none"; 
     }
 }
+
 
 const getProducts = async () => {
     const url = "https://madelyndoyle.github.io/csce242/projects/part6/products.json";
