@@ -20,6 +20,19 @@ const getProducts = async () => {
     }
 };
 
+const getPork = async () => {
+    const url = "https://madelyndoyle.github.io/csce242/projects/part6/pork.json";
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Error`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Error fetching product data:", error);
+    }
+};
+
 const showProducts = async () => {
     const products = await getProducts();
     const productSection = document.getElementById("product-section");
@@ -29,7 +42,6 @@ const showProducts = async () => {
         return;
     }
 
-    productSection.innerHTML = `<h3>Images of some of our products!</h3>`; // Reset previous content
 
     products.forEach((product) => {
         const productDiv = document.createElement("div");
@@ -38,7 +50,6 @@ const showProducts = async () => {
         productDiv.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <h4>${product.name}</h4>
-            <p><strong>Type:</strong> ${product.meatType}</p>
             <p><strong>Cut:</strong> ${product.cutDescription}</p>
             <p><strong>Weight:</strong> ${product.averageWeight}</p>
             <p><strong>Price:</strong> ${product.pricePerPound}</p>
@@ -49,3 +60,30 @@ const showProducts = async () => {
 };
 
 showProducts();
+
+const showPork = async () => {
+    const porks = await getPork();
+    const porkSection = document.getElementById("pork-section");
+
+    if (!porks || porks.length === 0) {
+        porkSection.innerHTML = "<p>No products available.</p>";
+        return;
+    }
+
+    porks.forEach((product) => {
+        const porkDiv = document.createElement("div");
+        porkDiv.classList.add("pork-card");
+
+        porkDiv.innerHTML = `
+            <img src="${product.image}" alt="${product.name}" class="product-image">
+            <h4>${product.name}</h4>
+            <p><strong>Cut:</strong> ${product.cutDescription}</p>
+            <p><strong>Weight:</strong> ${product.averageWeight}</p>
+            <p><strong>Price:</strong> ${product.pricePerPound}</p>
+        `;
+
+        porkSection.appendChild(porkDiv);
+    });
+};
+
+showPork();
