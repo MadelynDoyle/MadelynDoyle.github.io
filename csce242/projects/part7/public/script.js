@@ -12,7 +12,7 @@ function toggleNav() {
 
 
 const getProducts = async () => {
-    const url = "https://madelyndoyle.github.io/csce242/projects/part6/products.json";
+    const url = "https://madelyndoyle.github.io/csce242/projects/part7/public/products.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -25,7 +25,7 @@ const getProducts = async () => {
 };
 
 const getPork = async () => {
-    const url = "https://madelyndoyle.github.io/csce242/projects/part6/pork.json";
+    const url = "https://madelyndoyle.github.io/csce242/projects/part7/public/pork.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
