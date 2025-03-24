@@ -1,3 +1,5 @@
+
+
 function toggleNav() {
     let nav = document.getElementById("nav-menu");
 
@@ -91,32 +93,30 @@ const showPork = async () => {
 showPork();
 
 //Contact Form
-const form = document.getElementById("contact-form");
-const message = document.getElementById("form-message");
-form.addEventListener("submit", async (e) => {
+document.querySelector("form").addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form);
+    const name = document.querySelector("#name").value;
+    const phone = document.querySelector("#phone").value;
+    const email = document.querySelector("#email").value;
+    const inquiry = document.querySelector("#inquiry").value;
 
-    try {
-        const response = await fetch("https://formspree.io/f/xdkezkeo", {
-            method: "POST",
-            body: formData,
-            headers: {
-                'Accept': 'contactUs/json'
-            }
-        });
+    const res = await fetch("/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, phone, email, inquiry })
+    });
 
-        if (response.ok) {
-            message.textContent = "Thank you! Your message has been sent.";
-            message.style.color = "green";
-            form.reset();
-        } else {
-            message.textContent = "Oops! There was a problem submitting your form.";
-            message.style.color = "red";
-        }
-    } catch (error) {
-        message.textContent = "Network error. Please try again later.";
-        message.style.color = "red";
+    const msg = document.createElement("p");
+
+    if (res.ok) {
+        msg.textContent = "Message sent successfully!";
+        msg.style.color = "green";
+    } else {
+        msg.textContent = "Failed to send message.";
+        msg.style.color = "red";
     }
+
+    document.querySelector("form").appendChild(msg);
 });
+
