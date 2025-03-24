@@ -119,4 +119,8 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
     document.querySelector("form").appendChild(msg);
 });
-
+const res = await fetch("http://localhost:3000/send", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, phone, email, inquiry })
+});
