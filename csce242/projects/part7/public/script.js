@@ -93,34 +93,29 @@ const showPork = async () => {
 showPork();
 
 //Contact Form
-document.querySelector("form").addEventListener("submit", async (e) => {
-    e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#contact-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-    const name = document.querySelector("#name").value;
-    const phone = document.querySelector("#phone").value;
-    const email = document.querySelector("#email").value;
-    const inquiry = document.querySelector("#inquiry").value;
+        const name = document.querySelector("#name").value;
+        const phone = document.querySelector("#phone").value;
+        const email = document.querySelector("#email").value;
+        const inquiry = document.querySelector("#inquiry").value;
 
-    const res = await fetch("/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, phone, email, inquiry })
+        const res = await fetch("/send", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, phone, email, inquiry })
+        });
+
+        const messageEl = document.querySelector("#form-message");
+        if (res.ok) {
+            messageEl.textContent = "Message sent successfully!";
+            messageEl.style.color = "green";
+        } else {
+            messageEl.textContent = "Failed to send message.";
+            messageEl.style.color = "red";
+        }
     });
-
-    const msg = document.createElement("p");
-
-    if (res.ok) {
-        msg.textContent = "Message sent successfully!";
-        msg.style.color = "green";
-    } else {
-        msg.textContent = "Failed to send message.";
-        msg.style.color = "red";
-    }
-
-    document.querySelector("form").appendChild(msg);
 });
-const res = await fetch("http://localhost:3000/send", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, phone, email, inquiry })
-});
+
